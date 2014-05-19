@@ -1,0 +1,46 @@
+安装完成后，最后一步设置
+	git config --global user.name "Your Name"
+	git config --global user.email "email@example.com"
+	
+创建版本库
+	创建空目录
+		mkdir myrepository
+		cd myrepository
+		pwd                //显示当前目录
+	把目录变成版本库
+		git init
+
+把文件放到版本库
+	git add (文件名)
+	git commit -m "说明"
+	
+查看工作区和版本库的不同
+	git diff (文件名)
+	
+查看仓库的当前状态
+	git status
+	
+版本回滚
+	git reset --hard HEAD^  
+	 或者
+	 git reset --hard HEAD~100
+	 
+	 git reset --hard commitID
+	 
+查看历史记录
+	git log  
+	减少参数
+	git log --pretty=oneline
+	
+记录命令
+	git reflog
+	
+撤销工作区的修改
+	git checkout --filename
+	
+撤销暂存区的修改
+	git reset HEAD filename
+	
+删除文件
+	rm filename
+	git rm filename
